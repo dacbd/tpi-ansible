@@ -1,5 +1,6 @@
 ---
-name: setup
-become: true
-roles:
-  - docker
+- name: setup
+  hosts: localhost
+  become: true
+  roles:
+    - docker
